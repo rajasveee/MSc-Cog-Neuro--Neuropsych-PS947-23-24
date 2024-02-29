@@ -10,12 +10,15 @@ editor: visual
 
 ```{r}
 #| echo: false
+#using echo so that the code doesn't create a loop
 library(tidyverse)
 library(brms)
 library(rstan)
-# Set working directory
+
+#setting the working directory to also fetch the recommendations.csv file
 setwd("C:/Users/veepe/OneDrive/Documents")
 
+#calling the csv file with data
 data_recom <- read.csv("recommendations.csv")
 
 head(data_recom)
